@@ -66,7 +66,7 @@ vm._events[event].push(fn)
 
 ## `instance/inject`
 
-看[provide-ubhect](https://vuejs.org/v2/api/#provide-inject)才知道做什么用的，大概意思是在父组件中注入一个值，在所有的自组件中都可拿到。但不是 reactive 的，且作者故意这么做的，但是也可改变。
+看 [provide-ubhect](https://vuejs.org/v2/api/#provide-inject) 才知道做什么用的，大概意思是在父组件中注入一个值，在所有的自组件中都可拿到。但不是 reactive 的，且作者故意这么做的，但是也可改变。
 
 问题
 
