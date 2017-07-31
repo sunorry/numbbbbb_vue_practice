@@ -89,6 +89,18 @@ Why do they have this order? I'll let you answer this.
 
 Hint: think from another side, what will happen if you change their order?
 
-这个我想了下还真不知道为啥，3 ->2 ->1 这样的顺序也没什么不妥。我写了个 demo 也没什么看出有什么问题。
+掉到坑里了，我看的版本是 `2.3.3`，它就是先 `initProvide` 的。想死。
 
-还望其他同学解答下。
+
+```js
+new Vue({
+    provide: {
+        name: 'numb'
+    },
+    inject: ['name']
+})
+```
+
+`inject` 的做法是从自己往上遍历开始拿 `this.provide` 上与自己 key 一样的，如果先 `initProvide` 那么如果 key 相同，拿到的永远是自己的，而不是从父级传过来。不过我觉得遍历的时候从父级开始也可以避归这个问题。作者专门改了执行顺序，应该不是这个原因，拿到自己 `provide` 的是正常操作了。那就可能是优先级问题了，先 `provide` 的话，会让 `data` 上设置的初始值失效，应该就是这个原因吧。
+
+还望高人指点。
