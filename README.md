@@ -10,9 +10,9 @@ read-vue-source-code 给了个方向，认真读文章的同时，认真做 prac
 ## Contents
 
 - [Find the Entry](https://github.com/sunorry/numbbbbb_vue_practice/blob/master/01-find-the-entry.md)
-- [Dig into the Core]
-- [Initialization]
-- [Dynamic Data - Observer, Dep and Watcher]
+- [Dig into the Core](https://github.com/sunorry/numbbbbb_vue_practice/blob/master/02-dig-into-the-core.md)
+- [Initialization](https://github.com/sunorry/numbbbbb_vue_practice/blob/master/03-init-introduction.md)
+- [Dynamic Data - Observer, Dep and Watcher](https://github.com/sunorry/numbbbbb_vue_practice/blob/master/04-dynamic-data-observer-dep-and-watcher.md)
 - [Dynamic Data - Lazy, Sync and Queue]
 - [View Rendering - Intruduction]
 - [View Rendering - Compiler]
